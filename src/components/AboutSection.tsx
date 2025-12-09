@@ -3,9 +3,9 @@ import { Code2, TestTube, Layers } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-    { name: "React", level: 85 },
+    { name: "React", level: 80 },
     { name: "TypeScript", level: 80 },
-    { name: "Java Spring Boot", level: 70 },
+    { name: "Java Spring Boot", level: 65 },
     { name: "Testes / QA", level: 90 },
   ];
 
