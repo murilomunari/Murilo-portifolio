@@ -6,8 +6,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "murilo@email.com",
-      href: "mailto:murilo@email.com",
+      value: "mu_bissiato@hotmail.com",
+      href: "mailto:mu_bissiato@hotmail.com",
       color: "hover:text-red-400",
     },
     {
@@ -20,15 +20,15 @@ const ContactSection = () => {
     {
       icon: MessageCircle,
       label: "WhatsApp",
-      value: "(00) 00000-0000",
-      href: "https://wa.me/5500000000000",
+      value: "(11) 99315-5201",
+      href: "https://wa.me/5511993155201",
       color: "hover:text-green-400",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "/in/murilomunari",
-      href: "https://linkedin.com/in/murilomunari",
+      value: "/in/murilomunaribissiato",
+      href: "https://www.linkedin.com/in/murilomunaribissiato/",
       color: "hover:text-blue-400",
     },
   ];
@@ -84,7 +84,8 @@ const ContactSection = () => {
             className="mt-12 text-center"
           >
             <a
-              href="mailto:murilo@email.com"
+              href="mailto:mu_bissiato@hotmail.com"
+              target="_blank"
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-display font-semibold rounded-full hover:opacity-90 transition-opacity animate-pulse-glow"
             >
               <Send className="w-5 h-5" />

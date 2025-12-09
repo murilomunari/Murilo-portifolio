@@ -4,39 +4,43 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Projeto React",
-      description: "Aplicação web desenvolvida com React e TypeScript, utilizando boas práticas de desenvolvimento.",
+      title: "Linktree Clone",
+      description:
+        "Clone do Linktree para gerenciar múltiplos links em um só lugar com banco de dados firebase e verificação de usuário.",
       tags: ["React", "TypeScript", "Tailwind CSS"],
-      github: "#",
+      github: "https://github.com/murilomunari/linktree.git",
       demo: "#",
     },
     {
-      title: "API Spring Boot",
-      description: "API REST desenvolvida em Java com Spring Boot, incluindo autenticação e documentação.",
-      tags: ["Java", "Spring Boot", "PostgreSQL"],
-      github: "#",
+      title: "wsplus E-commerce Backend",
+      description:
+        "Um monolito backend para um sistema de e-commerce com funcionalidades completas de gerenciamento de produtos, usuários e pedidos.",
+      tags: ["Java", "Spring Boot", "PostgreSQL", "Docker", "AWS", "Stripe"],
+      github: "https://github.com/murilomunari/wsplus",
       demo: "#",
     },
     {
-      title: "Dashboard de Testes",
-      description: "Dashboard para visualização de métricas de testes automatizados e qualidade de software.",
-      tags: ["React", "Chart.js", "Node.js"],
-      github: "#",
+      title: "Teste de API Automatizado",
+      description:
+        "Teste de API RESTful utilizando Cypress para garantir a funcionalidade e performance das endpoints, baseado no wsplus.",
+      tags: ["React", "cypress.js", "Node.js"],
+      github: "https://github.com/murilomunari/wsplus_cypress",
       demo: "#",
     },
     {
-      title: "E-commerce Frontend",
-      description: "Interface moderna de e-commerce com carrinho de compras e integração de pagamento.",
-      tags: ["React", "TypeScript", "Stripe"],
-      github: "#",
-      demo: "#",
+      title: "laisa-zen",
+      description:
+        "Website pessoal de Laísa Mammana, especialista em massagem relaxante e limpeza de pele. Criado para apresentar serviços, qualificações e facilitar contato.",
+      tags: ["React", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/murilomunari/laisa-zen",
+      demo: "https://bylaisafisio.netlify.app",
     },
   ];
 
   return (
     <section id="projetos" className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/10 to-background" />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -67,16 +71,22 @@ const ProjectsSection = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Folder className="w-6 h-6 text-primary" />
                 </div>
+
                 <div className="flex gap-3">
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={`GitHub do projeto ${project.title}`}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     <Github className="w-5 h-5" />
                   </a>
+
                   <a
                     href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={`Demo do projeto ${project.title}`}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
@@ -88,6 +98,7 @@ const ProjectsSection = () => {
               <h3 className="font-display text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                 {project.title}
               </h3>
+
               <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                 {project.description}
               </p>

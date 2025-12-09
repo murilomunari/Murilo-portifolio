@@ -3,9 +3,9 @@ import { Github, Linkedin, Mail, MessageCircle, ChevronDown } from "lucide-react
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:seu@email.com", label: "Email" },
+    { icon: Github, href: "https://github.com/murilomunari", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/murilomunaribissiato/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:mu_bissiato@hotmail.com", label: "Email" },
     { icon: MessageCircle, href: "#", label: "WhatsApp" },
   ];
 
