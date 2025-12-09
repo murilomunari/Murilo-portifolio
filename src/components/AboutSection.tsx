@@ -55,9 +55,7 @@ const AboutSection = () => {
           >
             <div className="glass-card rounded-2xl p-8 mb-8">
               <p className="text-foreground/90 leading-relaxed mb-6">
-                Sou um profissional de QA há 1 ano, atualmente em transição para desenvolvimento front-end. 
-                Minha experiência em testes me deu uma perspectiva única sobre a importância da qualidade do código 
-                e da experiência do usuário.
+                Sou um profissional de QA há 1 ano, atualmente em transição para desenvolvimento front-end. Sou formado em Análise e Desenvolvimento de Sistemas (ADS), e minha experiência em testes me proporcionou uma visão única sobre a importância da qualidade do código, da confiabilidade das funcionalidades e da experiência do usuário.
               </p>
               <p className="text-foreground/90 leading-relaxed">
                 Trabalho principalmente com <span className="text-primary font-medium">React</span> e{" "}

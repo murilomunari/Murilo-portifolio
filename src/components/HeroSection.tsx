@@ -6,7 +6,7 @@ const HeroSection = () => {
     { icon: Github, href: "https://github.com/murilomunari", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/murilomunaribissiato/", label: "LinkedIn" },
     { icon: Mail, href: "mailto:mu_bissiato@hotmail.com", label: "Email" },
-    { icon: MessageCircle, href: "#", label: "WhatsApp" },
+    { icon: MessageCircle, href: "https://wa.me/5511993155201", label: "WhatsApp" },
   ];
 
   return (
@@ -61,6 +61,8 @@ const HeroSection = () => {
               href={social.href}
               aria-label={social.label}
               className="p-3 rounded-full bg-secondary/50 border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <social.icon className="w-5 h-5" />
             </a>
